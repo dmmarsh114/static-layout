@@ -5,10 +5,12 @@
 
 #logIn {
     color: white;
+    padding-right: 10px;
 }
 
 #logo {
     color: green;
+    padding-left: 10px;
 }
 
 body {
@@ -20,6 +22,12 @@ h1 {
     font-weight: 200;
 }
 
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .button {
     text-transform: uppercase;
     font-weight: bold;
@@ -29,8 +37,10 @@ h1 {
     padding-left: 25px;
     padding-right: 25px;
     word-spacing: 2.5px;
+    margin-left: 450px;
+    margin-right: 450px;
 }
 
-#disclaimer {
+#legal {
     color: gray;
 }
