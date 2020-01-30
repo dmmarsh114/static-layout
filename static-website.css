@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logIn {
+    color: white;
+}
+
+#logo {
+    color: green;
+}
+
+body {
+    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    background-color: lightblue;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    border: thin solid transparent;
+    padding: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-spacing: 2.5px;
+}
+
+#disclaimer {
+    color: gray;
+}
