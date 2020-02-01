@@ -1,13 +1,22 @@
+/* Style the header */
 .header {
-    display: inline;
-    position: sticky;
-    top: 0;
-    width: 100%;
+    position: absolute;
+    padding: 10px 16px;
+    background-color: transparent;
+    color: black;
+  }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: gray;
 }
 
-.test {
-    display: flex;
-    justify-content: space-between;
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 102px;
 }
 
 #logIn {
@@ -29,14 +38,14 @@ h1 {
     font-weight: 200;
 }
 
-.content {
+.content1 {
     background-image: url(./assets/manWatchingTV1.jpg);
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
 
     text-align: center;
     display: flex;
@@ -58,4 +67,20 @@ h1 {
 
 #legal {
     color: gray;
+}
+
+.content2 {
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: thin solid gray;
+    height: 700px;
+    width: 500px;
 }
