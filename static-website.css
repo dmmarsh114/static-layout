@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 5;
   }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -36,12 +37,8 @@ padding-top: 102px;
 
 body {
     margin: 0;
-    font-family: 'Graphik',Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
-}
-
-h1 {
-    font-weight: 200;
 }
 
 .content1 {
@@ -52,15 +49,48 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
+    /* box-shadow: 0 3000px rgba(51, 107, 228, 0.4) inset; */
     
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.gradientTint {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #184097, #1c7a7e);  /*#43c6ac, #44a08d */
+    opacity: 85%;
+}
+
 .text {    
+    position: relative;
+    z-index: 4;
     text-align: center;
     color: white;
+    /* letter-spacing: -0.5px; */
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.text h1 {
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#masthead {
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secondMessage {
+    font-size: 15px;
 }
 
 .button {
@@ -74,10 +104,13 @@ h1 {
     word-spacing: 2.5px;
     margin-left: 450px;
     margin-right: 450px;
+    position: relative;
+    z-index: 4;
 }
 
 #legal {
     color: gray;
+    font-size: 12px;
 }
 
 .content2 {
