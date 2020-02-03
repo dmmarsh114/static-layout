@@ -25,7 +25,7 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
-    padding-right: 70px;
+    padding-right: 60px;
     padding-top: 5px;
     letter-spacing: 1px;
 }
@@ -159,7 +159,7 @@ body {
     margin: 0;
 }
 
-#plan {
+.plan {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
@@ -203,9 +203,28 @@ hr {
 .features {
     background-color: #FCFCFC;
     margin: 0;
-    padding: 0;
+    padding: 30px;
+    padding-left: 15px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 .features ul {
     list-style-image: url(./assets/check-mark-6-16.gif);
+}
+
+.features li {
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.selected {
+    margin-top: -30px;
+    border-top: thick solid lightgreen;
+}
+
+.selected button {
+    background-color: black;
+    border: hidden;
+    color: white;
 }

@@ -1,17 +1,36 @@
-// When the user scrolls the page, execute myFunction
+/*
+  ~~ HEADER ~~
+*/
+
+// when the user scrolls the page, execute headerScroll
 window.onscroll = function() { headerScroll() };
 
-// Get the header
+// the header element
 var header = document.getElementById("myHeader");
 
-// Get the offset position of the navbar
+// offsetTop is the position of the header
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// add the sticky class to the header when the user scrolls 
 function headerScroll() {
+  // if the user scrolls (pageYOffset) past the header's position, add the sticky class
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
+}
+
+/*
+  ~~ SELECTION ANIMATION ~~
+*/
+
+// add the selected class when the user mouses over the object 
+function addAnimation(elem) {
+  elem.classList.add("selected");
+}
+
+// remove the selected class when the user's mouse leaves the object 
+function removeAnimation(elem) {
+  elem.classList.remove("selected");
 }
