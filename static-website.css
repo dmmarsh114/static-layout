@@ -22,6 +22,7 @@
 }
 
 #logIn {
+    text-decoration: inherit;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
@@ -93,25 +94,32 @@ body {
 
 #secondMessage {
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .button {
     text-transform: uppercase;
     font-weight: bold;
+    word-spacing: 2.5px;
+    letter-spacing: .5px;
+    
     background-color: white;
     border: thin solid transparent;
-    padding: 14px;
-    padding-left: 25px;
-    padding-right: 25px;
-    word-spacing: 2.5px;
-    margin-left: 450px;
-    margin-right: 450px;
     position: relative;
     z-index: 4;
     width: 20%;
+    
+    padding: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+
     margin-left: auto;
     margin-right: auto;
-    letter-spacing: .5px;
+}
+
+.hover {
+    background-color: black;
+    color: white;
 }
 
 #legal {

@@ -22,15 +22,25 @@ function headerScroll() {
 }
 
 /*
-  ~~ SELECTION ANIMATION ~~
+  ~~ SELECTION ANIMATIONS ~~
 */
 
-// add the selected class when the user mouses over the object 
-function addAnimation(elem) {
-  elem.classList.add("selected");
+// add the animated class when the user mouses over the element 
+function addAnimation(elem, animClass) {
+  elem.classList.add(animClass);
 }
 
-// remove the selected class when the user's mouse leaves the object 
-function removeAnimation(elem) {
-  elem.classList.remove("selected");
+// remove the animated class when the user's mouse leaves the element 
+function removeAnimation(elem, animClass) {
+  elem.classList.remove(animClass);
+}
+
+/*
+  ~~ BUTTONS ~~
+*/
+
+// opens hulu plan options in a new window 
+// runs when any of the buttons are clicked
+function directToLogin() {
+  window.open('https://signup.hulu.com/plans', '_blank');
 }

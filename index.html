@@ -13,7 +13,7 @@
     <!-- Header -->
     <div class="header" id="myHeader">
         <span id='logo'>hulu</span>
-        <span id='logIn'>log in<span>
+        <span><a href="https://signup.hulu.com/account" target="blank"  id='logIn'>log in</a><span>
     </div>
 
     <!-- Content 1 -->
@@ -29,8 +29,9 @@
                 <br>
             </div>
         </div>
-            
-        <button class="button">Start Your Free trial</button>
+        
+        <button class="button" onclick="directToLogin()" onmouseover="addAnimation(this, 'hover')" onmouseout="removeAnimation(this, 'hover')">Start Your Free trial</button>
+        
         <p class="text" id='legal'>Free trial available for new and eligible returning subscribers only.</p>
     
     </section>
@@ -44,13 +45,13 @@
 
         <div class="boxes">
 
-            <div class="box" id="huluPlan" onmouseover="addAnimation(this)" onmouseout="removeAnimation(this)">
+            <div class="box" id="huluPlan" onmouseover="addAnimation(this, 'selected')" onmouseout="removeAnimation(this, 'selected')">
                 <div class="plan">
                     <h4>Hulu</h4>
                     <h5>Get 1 month free, then starts at</h5>
                     <span id="cost">$5.99/</span><span>month</span>
                     <div class="selectPlan">
-                        <button class="button" id="planButton">Select Plan</button>
+                        <button class="button" id="planButton" onclick="directToLogin()">Select Plan</button>
                     </div>
                 </div>
                 <hr>
@@ -64,14 +65,14 @@
             <!-- See Add-ons Goes Here -->
             </div>
 
-            <div class="box" id="liveTVPlan" onmouseover="addAnimation(this)" onmouseout="removeAnimation(this)">
+            <div class="box" id="liveTVPlan" onmouseover="addAnimation(this, 'selected')" onmouseout="removeAnimation(this, 'selected')">
                 <div class="plan">
                     <h4>Hulu + Live TV</h4>
                     <h5>Get 7 days free, then starts at</h5>
                     <span id="cost">$54.99/</span><span>month</span>
                     <div class="selectPlan">
-                        <button class="button" id="planButton">Select Plan</button>
-                        <h6>Learn More</h6>
+                        <button class="button" id="planButton" onclick="directToLogin()">Select Plan</button>
+                        <a href="https://www.hulu.com/live-tv" target="blank"><h6>Learn More</h6></a>
                     </div>
                 </div>
                 <hr>
