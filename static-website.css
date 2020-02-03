@@ -10,7 +10,6 @@
 
   }
 
-/* js adds this class when the user scrolls down on the website */
 .sticky {
     position: fixed;
     top: 0;
@@ -23,6 +22,7 @@
 
 #logIn {
     text-decoration: inherit;
+    color: inherit;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
